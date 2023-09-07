@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Álbum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agregar Álbum</h1>
+    </header>
+    <main>
+        <form action="procesar_album.php" method="POST">
+            <label for="titulo">Título del Álbum:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            
+            <label for="artista">Artista:</label>
+            <input type="text" id="artista" name="artista" required>
+            
+            <label for="anio">Año de Lanzamiento:</label>
+            <input type="number" id="anio" name="anio" required>
+            
+            <input type="submit" value="Agregar Álbum">
+        </form>
+    </main>
+</body>
+</html>
